@@ -19,6 +19,8 @@ By October 2012, Rust had classes, destructors, polymorphism, inheritance, and s
 
 ## Sources
 [1] https://en.wikipedia.org/wiki/Rust_(programming_language)#:~:text=Rust%20is%20a%20multi%2Dparadigm,in%20other%20memory%2Dsafe%20languages.
+
 [2] https://en.wikipedia.org/wiki/Servo_(software)#:~:text=Servo%20was%20the%20engine%20of,browser%20was%20released%20in%202020.
+
 [3] https://www.rust-lang.org/learn/get-started
 
