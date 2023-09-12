@@ -2,7 +2,7 @@
 This repo is for learning Rust in Programming Languages - CS330 at Simmons University.
 Author: Paige Thompson
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/640px-Rust_programming_language_black_logo.svg.png)
+<a href="url"><img src="[http://url.to/image.png](https://www.rust-lang.org/static/images/rust-social-wide.jpg)" align="left" height="48" width="48" ></a>
 
 ## Language overview and setup
 Rust is a high-level, general-purpose programming language that enforces statically typed variables and memory safety. 
