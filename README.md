@@ -2,7 +2,7 @@
 This repo is for learning Rust in Programming Languages - CS330 at Simmons University.
 Author: Paige Thompson
 
-![alt text]([http://url/to/img.png](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/640px-Rust_programming_language_black_logo.svg.png))
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/640px-Rust_programming_language_black_logo.svg.png)
 
 ## Language overview and setup
 Rust is a high-level, general-purpose programming language that enforces statically typed variables and memory safety. 
@@ -31,8 +31,12 @@ By October 2012, Rust had classes, destructors, polymorphism, inheritance, and s
 
 ## Sources
 [1] https://en.wikipedia.org/wiki/Rust_(programming_language)#:~:text=Rust%20is%20a%20multi%2Dparadigm,in%20other%20memory%2Dsafe%20languages.
+
 [2] https://en.wikipedia.org/wiki/Servo_(software)#:~:text=Servo%20was%20the%20engine%20of,browser%20was%20released%20in%202020.
+
 [3] https://forge.rust-lang.org/infra/other-installation-methods.html
+
 [4] https://www.rust-lang.org/learn/get-started
+
 [5] https://code.visualstudio.com/docs/languages/rust
 
