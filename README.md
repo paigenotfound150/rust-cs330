@@ -47,7 +47,10 @@ We'll be using Cargo, as mentioned earlier!
    `fn main() { println!("Hello, World"); }`
  5.  In the VS Code integrated terminal, run `cargo build`. This will deploy our build output into an executable called "hello_world.exe".
  6.  To run our project and print out our "Hello World" to the console, run the following command:
-    `cargo run`. 
+    `cargo run`.
+
+#### Writing Comments
+To write comments in a Rust file, use two forward slashes //
 
 ## Sources
 [1] https://en.wikipedia.org/wiki/Rust_(programming_language)#:~:text=Rust%20is%20a%20multi%2Dparadigm,in%20other%20memory%2Dsafe%20languages.
