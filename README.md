@@ -36,19 +36,19 @@ I will be using the below sources for my learning:
 5. Cargo is a Rust Package manager that comes for free when we first installed Rust using Rustup. We'll be using this to compile and run our code, and to create our first "Hello World" program later on.
 
 #### Hello World
-1. We'll be using Cargo, as mentioned earlier!
-2. Using the terminal, navigate to the directory you'd like to create your program in. We're going to create a new cargo project by running the following command:
+We'll be using Cargo, as mentioned earlier!
+1. Using the terminal, navigate to the directory you'd like to create your program in. We're going to create a new cargo project by running the following command:
    `cargo new hello_world`
-4. Next we will navigate to our new project and open it in Visual Studio Code.
+2. Next we will navigate to our new project and open it in Visual Studio Code.
    `cd hello_world`
    `code .`
-5. Navigate into the src folder and press on main.rs. This is the file we'll be running our program from.
-6. As you can see, there is our main function that prints out to the console using !println
+3. Navigate into the src folder and press on main.rs. This is the file we'll be running our program from.
+4. As you can see, there is our main function that prints out to the console using !println
    `fn main() {
        println!("Hello, World");
     }`
- 7.  In the VS Code integrated terminal, run `cargo build`. This will deploy our build output into an executable called "hello_world.exe".
- 8.  To run our project and print out our "Hello World" to the console, run the following command:
+ 5.  In the VS Code integrated terminal, run `cargo build`. This will deploy our build output into an executable called "hello_world.exe".
+ 6.  To run our project and print out our "Hello World" to the console, run the following command:
     `cargo run`. 
 
 ## Sources
