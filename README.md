@@ -52,6 +52,71 @@ We'll be using Cargo, as mentioned earlier!
 #### Writing Comments
 To write comments in a Rust file, use two forward slashes //
 
+### Data Types and Naming Conventions
+Modules: snake_case
+Types: CamelCase
+Enums: CamelCase
+Functions: snake_case
+Local Variables: snake_case
+Constant Variables: SCREAMING_SNAKE_CASE
+
+Variables in Rust are immutable by default, so once you declare a value to a variable name, you can't change it.
+`let x = 5; // Immutable
+ let mut x = 5; // Mutable
+ `
+Rust allows you to 'shadow', or cast the value of one variable on top of another variable. 
+` let x = 5;
+  x = 5 + 1; // Will not work 
+  let x = x + 1; // Will work
+ `
+
+ 
+ 
+int
+string
+floating-point number
+boolean
+array/list
+dictionary (sometimes called a hash or a map, depending on your language)
+
+
+ In your example code, illustrate the important data type and operations features in your language. Write code that experiments with different operations applied on variables of the same data type and operations with variables of two different types: e.g. can you add ints and floats? Is the resulting variable an int (narrowing conversion) or a float (widening conversion)?  What about division? Can you put different data types in the same array or list?  Can one data type be converted to another either implicitly or explicitly (int to float, string to int, etc)? 
+
+ 
+
+Discussion questions:
+
+Does your language have keywords or reserved words? How many?
+What are the naming requirements for variables in your language? 
+What about naming conventions?  Are those enforced by the compiler/interpreter, or just standards in the community?
+
+Is your language statically or dynamically typed?
+Strongly typed or weakly typed?
+Are some variables mutable while others are immutable? 
+What are the operators available for each data type?
+Are mixed type operations allowed? If so, how are they accommodated?
+At what point are identifier names and operator symbols bound in your language? For example if you declare a (variable, class name, function name), when is it bound to the type, address? When are operators (+,*, etc.) bound to their operations?
+Explicitly typed or implicitly typed? 
+ 
+
+CODING EXAMPLE demonstrating the features above
+
+ 
+
+EXAMPLE OF (one) ILLUSTRATIVE EXAMPLE:
+
+If you put this line (or something similar) in a program and try to print x, what does it do? 
+
+x = "5" + 6
+
+If it doesn't compile, why?  Is there something you can do to make it compile?
+
+ 
+
+Describe the limitations (or lack thereof) of your programming language as they relate to the coding example portion of the assignment (adding ints and floats, storing different types in lists, converting between data types).  Are there other restrictions or pitfalls that the documentation mentions that you need to be aware of?
+Are there built-in complex data types that are commonly used in your language? (hint: they’d probably appear fairly early in the documentation if so)
+ 
+
 ## Sources
 [1] https://en.wikipedia.org/wiki/Rust_(programming_language)#:~:text=Rust%20is%20a%20multi%2Dparadigm,in%20other%20memory%2Dsafe%20languages.
 
