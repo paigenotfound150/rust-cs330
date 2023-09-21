@@ -73,6 +73,7 @@ Functions: snake_case
 Local Variables: snake_case
 Constant Variables: SCREAMING_SNAKE_CASE
 
+Rust has 37 reserved words. 
 [List of all reserved keywords in Rust](https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/second-edition/appendix-01-keywords.html)
 
 #### Mutability 
@@ -87,45 +88,35 @@ Rust allows you to 'shadow', or cast the value of one variable on top of another
 ``` let x: i32 = 5;```
   
 ```let x: i32 = x + 1;```
+
+#### Rust is statically and strongly typed.
  
 #### Data Types
 ##### Scalar Types
 - Integer
 ```let x = 10;```
 - Floating Point
-```let y = 5.0;````
+```let y = 5.0;```
 - Boolean
 ```let toggle = true;```
 - Character
 ```let char = 'x';```
-```let specialChar = '@'````
+```let specialChar = '@'```
 
 ##### Compound Types
 - Tuple
+  Allows us to store values of different data types together.
+  
+  ```let tuple = ('String', 15.0, 15);```
+  Tuples have fixed sizes and elements cannot be added or removed after creation.
+  
 - Array
-
-
-##### Integers
-
- Length	  Signed	   Unsigned
-8-bit	     i8	        u8
-16-bit	    i16	       u16
-32-bit	    i32	       u32
-64-bit	    i64	       u64
-128-bit	   i128	      u128
-arch	      isize	     usize
- 
-Integer is any number that is not a fraction. The above table shows the different Integer types in Rust.
-'Signed' means that the number may become positive or negative, and 'unsigned' means it will only ever be positive.
-'Signed' numbers can store numbers -(2^(n - 1)) to (2^(n - 1) - 1), where n is the number of bits that 
+  Allows us to store values of the same data type.
+```let array = [4,10,5,3,1]```
+  Arrays are immutable by default, but we can create mutable arrays with the mut keyword.
 
 
 
-string
-floating-point number
-boolean
-array/list
-dictionary (sometimes called a hash or a map, depending on your language)
 
 
  In your example code, illustrate the important data type and operations features in your language. Write code that experiments with different operations applied on variables of the same data type and operations with variables of two different types: e.g. can you add ints and floats? Is the resulting variable an int (narrowing conversion) or a float (widening conversion)?  What about division? Can you put different data types in the same array or list?  Can one data type be converted to another either implicitly or explicitly (int to float, string to int, etc)? 
@@ -134,20 +125,13 @@ dictionary (sometimes called a hash or a map, depending on your language)
 
 Discussion questions:
 
-Does your language have keywords or reserved words? How many?
-What are the naming requirements for variables in your language? 
-What about naming conventions?  Are those enforced by the compiler/interpreter, or just standards in the community?
 
-Is your language statically or dynamically typed?
-Strongly typed or weakly typed?
-Are some variables mutable while others are immutable? 
+
 What are the operators available for each data type?
 Are mixed type operations allowed? If so, how are they accommodated?
 At what point are identifier names and operator symbols bound in your language? For example if you declare a (variable, class name, function name), when is it bound to the type, address? When are operators (+,*, etc.) bound to their operations?
 Explicitly typed or implicitly typed? 
- 
 
-CODING EXAMPLE demonstrating the features above
 
  
 
