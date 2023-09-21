@@ -50,6 +50,7 @@ We'll be using Cargo, as mentioned earlier!
 6. As you can see, there is our main function that prints out to the console using !println
 
    ```
+   
    fn main() {
        println!("Hello, World");
       }
@@ -64,6 +65,7 @@ To write comments in a Rust file, use two forward slashes //
 ### Data Types and Naming Conventions
 
 #### Naming Conventions
+Rust is case-sensitive, and variables must begin with either a letter or an underscore.
 Modules: snake_case
 Types: CamelCase
 Enums: CamelCase
@@ -71,22 +73,37 @@ Functions: snake_case
 Local Variables: snake_case
 Constant Variables: SCREAMING_SNAKE_CASE
 
+[List of all reserved keywords in Rust](https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/second-edition/appendix-01-keywords.html)
+
 #### Mutability 
 Variables in Rust are immutable by default, so once you declare a value to a variable name, you can't change it.
 
-```let x = 5; // Immutable
+```let x = 5; // Immutable```
 
- let mut x = 5; // Mutable
- ```
+ ```let mut x = 5; // Mutable```
+ 
 Rust allows you to 'shadow', or cast the value of one variable on top of another variable. 
-``` let x: i32 = 5;
 
-  x: i32 = 5 + 1; // Will get error: 'cannot assign twice to immutable variable'
+``` let x: i32 = 5;```
   
-  let x: i32 = x + 1; // Will work
- ```
+```let x: i32 = x + 1;```
  
 #### Data Types
+##### Scalar Types
+- Integer
+```let x = 10;```
+- Floating Point
+```let y = 5.0;````
+- Boolean
+```let toggle = true;```
+- Character
+```let char = 'x';```
+```let specialChar = '@'````
+
+##### Compound Types
+- Tuple
+- Array
+
 
 ##### Integers
 
