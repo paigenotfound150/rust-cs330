@@ -24,6 +24,7 @@ I will be using the below sources for my learning:
 
 #### Installation on MacOS
 [4] You can get started by using the Rust installer and version management tool "Rustup", by running the following command: 
+
 ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
 
 #### Using with Visual Studio Code
@@ -38,16 +39,21 @@ I will be using the below sources for my learning:
 #### Hello World
 We'll be using Cargo, as mentioned earlier!
 1. Using the terminal, navigate to the directory you'd like to create your program in. We're going to create a new cargo project by running the following command:
+
    ```cargo new hello_world```
-2. Next we will navigate to our new project and open it in Visual Studio Code.
+3. Next we will navigate to our new project and open it in Visual Studio Code.
+
    ```cd hello_world```
    
    ```code .```
-4. Navigate into the src folder and press on main.rs. This is the file we'll be running our program from.
-5. As you can see, there is our main function that prints out to the console using !println
+5. Navigate into the src folder and press on main.rs. This is the file we'll be running our program from.
+6. As you can see, there is our main function that prints out to the console using !println
+
    ```fn main() { println!("Hello, World"); }```
- 6.  In the VS Code integrated terminal, run `cargo build`. This will deploy our build output into an executable called "hello_world.exe".
- 7.  To run our project and print out our "Hello World" to the console, run the following command:
+   
+ 9.  In the VS Code integrated terminal, run `cargo build`. This will deploy our build output into an executable called "hello_world.exe".
+ 10.  To run our project and print out our "Hello World" to the console, run the following command:
+
    ```cargo run```
 
 #### Writing Comments
@@ -65,16 +71,18 @@ Constant Variables: SCREAMING_SNAKE_CASE
 
 #### Mutability 
 Variables in Rust are immutable by default, so once you declare a value to a variable name, you can't change it.
-`let x = 5; // Immutable
+
+```let x = 5; // Immutable
+
  let mut x = 5; // Mutable
- `
+ ```
 Rust allows you to 'shadow', or cast the value of one variable on top of another variable. 
-` let x: i32 = 5;
+``` let x: i32 = 5;
 
   x: i32 = 5 + 1; // Will get error: 'cannot assign twice to immutable variable'
   
   let x: i32 = x + 1; // Will work
- `
+ ```
  
 #### Data Types
 
@@ -128,7 +136,7 @@ EXAMPLE OF (one) ILLUSTRATIVE EXAMPLE:
 
 If you put this line (or something similar) in a program and try to print x, what does it do? 
 
-x = "5" + 6
+```x = "5" + 6```
 
 If it doesn't compile, why?  Is there something you can do to make it compile?
 
