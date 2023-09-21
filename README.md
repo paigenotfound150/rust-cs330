@@ -108,11 +108,14 @@ Rust allows you to 'shadow', or cast the value of one variable on top of another
   Allows us to store values of different data types together.
   
   ```let tuple = ('String', 15.0, 15);```
+  
   Tuples have fixed sizes and elements cannot be added or removed after creation.
   
 - Array
   Allows us to store values of the same data type.
+  
 ```let array = [4,10,5,3,1]```
+
   Arrays are immutable by default, but we can create mutable arrays with the mut keyword.
 
 
