@@ -41,12 +41,13 @@ We'll be using Cargo, as mentioned earlier!
    ```cargo new hello_world```
 2. Next we will navigate to our new project and open it in Visual Studio Code.
    ```cd hello_world```
+   
    ```code .```
-3. Navigate into the src folder and press on main.rs. This is the file we'll be running our program from.
-4. As you can see, there is our main function that prints out to the console using !println
+4. Navigate into the src folder and press on main.rs. This is the file we'll be running our program from.
+5. As you can see, there is our main function that prints out to the console using !println
    ```fn main() { println!("Hello, World"); }```
- 5.  In the VS Code integrated terminal, run `cargo build`. This will deploy our build output into an executable called "hello_world.exe".
- 6.  To run our project and print out our "Hello World" to the console, run the following command:
+ 6.  In the VS Code integrated terminal, run `cargo build`. This will deploy our build output into an executable called "hello_world.exe".
+ 7.  To run our project and print out our "Hello World" to the console, run the following command:
    ```cargo run```
 
 #### Writing Comments
