@@ -53,6 +53,8 @@ We'll be using Cargo, as mentioned earlier!
 To write comments in a Rust file, use two forward slashes //
 
 ### Data Types and Naming Conventions
+
+#### Naming Conventions
 Modules: snake_case
 Types: CamelCase
 Enums: CamelCase
@@ -60,19 +62,37 @@ Functions: snake_case
 Local Variables: snake_case
 Constant Variables: SCREAMING_SNAKE_CASE
 
+#### Mutability 
 Variables in Rust are immutable by default, so once you declare a value to a variable name, you can't change it.
 `let x = 5; // Immutable
  let mut x = 5; // Mutable
  `
 Rust allows you to 'shadow', or cast the value of one variable on top of another variable. 
-` let x = 5;
-  x = 5 + 1; // Will not work 
-  let x = x + 1; // Will work
- `
+` let x: i32 = 5;
 
+  x: i32 = 5 + 1; // Will get error: 'cannot assign twice to immutable variable'
+  
+  let x: i32 = x + 1; // Will work
+ `
  
+#### Data Types
+
+##### Integers
+
+ Length	  Signed	   Unsigned
+8-bit	     i8	        u8
+16-bit	    i16	       u16
+32-bit	    i32	       u32
+64-bit	    i64	       u64
+128-bit	   i128	      u128
+arch	      isize	     usize
  
-int
+Integer is any number that is not a fraction. The above table shows the different Integer types in Rust.
+'Signed' means that the number may become positive or negative, and 'unsigned' means it will only ever be positive.
+'Signed' numbers can store numbers -(2^(n - 1)) to (2^(n - 1) - 1), where n is the number of bits that 
+
+
+
 string
 floating-point number
 boolean
@@ -127,4 +147,6 @@ Are there built-in complex data types that are commonly used in your language? (
 [4] https://www.rust-lang.org/learn/get-started
 
 [5] https://code.visualstudio.com/docs/languages/rust
+
+[6] https://doc.rust-lang.org/book/ch03-02-data-types.html
 
