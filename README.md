@@ -126,53 +126,23 @@ let x = 5;
 let y = 10;
 x + y; // cannot add a float to an integer
 ```
- - You can't convert integers to floats (and vice versa), but you can cast it as a float onto a new variable.
- - 
+
+#### Type Conversions
+ - You can't convert integers to floats (and vice versa), but you can cast the desired type onto a new variable.
+Converting integer to float:
 ```
 let x = 5;
 let y = x as f64; //f64 is a 64-bit floating point type
 println!("{}", y + 5.0); // 10.0
-
-- Converting from string to integer
-
 ```
-let my_int: u8 = "5".parse().unwrap(); // must declare explicit type
-println!("{}, my_int+5); // 10
-````
-- Converting from integer to string
 
-```
-let my_int: u8 = 5;
-let s: String = my_int.to_string();
-println!("{}", s); // "5"
-```
- 
+Converting from string to integer
+String -> Integer: "string".parse().unwrap(); 
+Integer -> String: integer_variable.to_string();
 
-Discussion questions:
+- Mixed type operations are not allowed. 
 
 
-
-What are the operators available for each data type?
-Are mixed type operations allowed? If so, how are they accommodated?
-At what point are identifier names and operator symbols bound in your language? For example if you declare a (variable, class name, function name), when is it bound to the type, address? When are operators (+,*, etc.) bound to their operations?
-Explicitly typed or implicitly typed? 
-
-
- 
-
-EXAMPLE OF (one) ILLUSTRATIVE EXAMPLE:
-
-If you put this line (or something similar) in a program and try to print x, what does it do? 
-
-```x = "5" + 6```
-
-If it doesn't compile, why?  Is there something you can do to make it compile?
-
- 
-
-Describe the limitations (or lack thereof) of your programming language as they relate to the coding example portion of the assignment (adding ints and floats, storing different types in lists, converting between data types).  Are there other restrictions or pitfalls that the documentation mentions that you need to be aware of?
-Are there built-in complex data types that are commonly used in your language? (hint: they’d probably appear fairly early in the documentation if so)
- 
 
 ## Sources
 [1] https://en.wikipedia.org/wiki/Rust_(programming_language)#:~:text=Rust%20is%20a%20multi%2Dparadigm,in%20other%20memory%2Dsafe%20languages.
