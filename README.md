@@ -119,18 +119,33 @@ Rust allows you to 'shadow', or cast the value of one variable on top of another
   Arrays are immutable by default, but we can create mutable arrays with the mut keyword.
 
 #### Operations
-- Cannot add a float and integer
+- Cannot perform arithmetic between float and integer
+  
 ```
 let x = 5;
 let y = 10;
 x + y; // cannot add a float to an integer
 ```
- 
+ - You can't convert integers to floats (and vice versa), but you can cast it as a float onto a new variable.
+ - 
+```
+let x = 5;
+let y = x as f64; //f64 is a 64-bit floating point type
+println!("{}", y + 5.0); // 10.0
 
+- Converting from string to integer
 
+```
+let my_int: u8 = "5".parse().unwrap(); // must declare explicit type
+println!("{}, my_int+5); // 10
+````
+- Converting from integer to string
 
- In your example code, illustrate the important data type and operations features in your language. Write code that experiments with different operations applied on variables of the same data type and operations with variables of two different types: e.g. can you add ints and floats? Is the resulting variable an int (narrowing conversion) or a float (widening conversion)?  What about division? Can you put different data types in the same array or list?  Can one data type be converted to another either implicitly or explicitly (int to float, string to int, etc)? 
-
+```
+let my_int: u8 = 5;
+let s: String = my_int.to_string();
+println!("{}", s); // "5"
+```
  
 
 Discussion questions:
