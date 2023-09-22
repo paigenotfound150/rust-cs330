@@ -105,6 +105,8 @@ Rust allows you to 'shadow', or cast the value of one variable on top of another
 - Character
 ```let char = 'x';```
 ```let specialChar = '@'```
+- String
+```let string = "Hello"```
 
 ##### Compound Types
 - Tuple:
