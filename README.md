@@ -107,14 +107,16 @@ Rust allows you to 'shadow', or cast the value of one variable on top of another
 ```let specialChar = '@'```
 
 ##### Compound Types
-- Tuple
+- Tuple:
+- 
   Allows us to store values of different data types together.
   
   ```let tuple = ('String', 15.0, 15);```
   
   Tuples have fixed sizes and elements cannot be added or removed after creation.
   
-- Array
+- Array:
+- 
   Allows us to store values of the same data type.
   
   ```let array = [4,10,5,3,1]```
@@ -127,7 +129,7 @@ Rust allows you to 'shadow', or cast the value of one variable on top of another
 ```
 let x = 5;
 let y = 10;
-x + y; // cannot add a float to an integer
+x + y; // error: cannot add a float to an integer
 ```
 
 #### Type Conversions
@@ -140,7 +142,9 @@ println!("{}", y + 5.0); // 10.0
 ```
 
 Converting from string to integer
+
 String -> Integer: "string".parse().unwrap(); 
+
 Integer -> String: integer_variable.to_string();
 
 - Mixed type operations are not allowed. 
