@@ -90,7 +90,7 @@ Rust allows you to 'shadow', or cast the value of one variable on top of another
 
 ``` let x: i32 = 5;```
   
-```let x: i32 = x + 1;```
+```let x: i32 = x + 1;  // x is now equal to 6```
 
 #### Rust is statically and strongly typed.
  
