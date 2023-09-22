@@ -62,9 +62,9 @@ We'll be using Cargo, as mentioned earlier!
 #### Writing Comments
 To write comments in a Rust file, use two forward slashes //
 
-### Data Types and Naming Conventions
+## Data Types and Naming Conventions
 
-#### Naming Conventions
+### Naming Conventions
 Rust is case-sensitive, and variables must begin with either a letter or an underscore.
 Modules: snake_case
 Types: CamelCase
@@ -76,7 +76,7 @@ Constant Variables: SCREAMING_SNAKE_CASE
 Rust has 37 reserved words. 
 [List of all reserved keywords in Rust](https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/second-edition/appendix-01-keywords.html)
 
-#### Mutability 
+### Mutability 
 Variables in Rust are immutable by default, so once you declare a value to a variable name, you can't change it.
 
 ```let x = 5; // Immutable```
@@ -91,7 +91,7 @@ Rust allows you to 'shadow', or cast the value of one variable on top of another
 
 #### Rust is statically and strongly typed.
  
-#### Data Types
+### Data Types
 ##### Scalar Types
 - Integer
 ```let x = 10;```
