@@ -114,11 +114,18 @@ Rust allows you to 'shadow', or cast the value of one variable on top of another
 - Array
   Allows us to store values of the same data type.
   
-```let array = [4,10,5,3,1]```
+  ```let array = [4,10,5,3,1]```
 
   Arrays are immutable by default, but we can create mutable arrays with the mut keyword.
 
-
+#### Operations
+- Cannot add a float and integer
+```
+let x = 5;
+let y = 10;
+x + y; // cannot add a float to an integer
+```
+ 
 
 
 
