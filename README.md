@@ -147,8 +147,48 @@ String -> Integer: "string".parse().unwrap();
 
 Integer -> String: integer_variable.to_string();
 
-- Mixed type operations are not allowed. 
+- Mixed type operations are not allowed.
 
+
+
+## Functions [7]
+Rust uses snake_case for naming functions.
+A function is defined by using fn, then the function name, then the parameter names (preceded by type).
+
+```
+//Functiont to multiply two numbers
+fn multiply(x:i32, y:i32) -> i32 {
+    return x * y;
+}
+
+//Function to get the factorial of a number using recursion
+fn recursive_factorial(x:i32) -> i32 {
+    if x == 1 {
+        return x
+    }
+    return x * recursive_factorial(x-1);
+}
+
+//Function to split a string based on whitespace, returns a Vector of strings
+fn split_string(string: String) -> Vec<String> {
+    let new_string: Vec<String> = string.split(" ").map(|s| s.to_string()).collect();
+    return new_string;
+}
+
+//Function to test pass by value or pass by reference
+fn test_pass_by(mut x: i32) {
+    x = 900;
+}
+```
+
+- Rust doesn't care where in your file you define your functions, only that they are within scope.
+- Rust supports recursive functions.
+- Functions can accept multiple parameters with different data types.
+- Functions can return multiple values through a Vector, Tuple, or an Array.
+- Functions in Rust are pass by value, not pass by reference.
+- Arguments, parameters, and local variables are stored by value on the stack during execution.
+- Variables are not accessible after or before code block execution, only during.
+- Variables inside of functions are immutable by default - you have to use the mut keyword during declaration to make them mutable.
 
 
 ## Sources
@@ -163,4 +203,6 @@ Integer -> String: integer_variable.to_string();
 [5] https://code.visualstudio.com/docs/languages/rust
 
 [6] https://doc.rust-lang.org/book/ch03-02-data-types.html
+
+[7] https://doc.rust-lang.org/book/ch03-03-how-functions-work.html
 
