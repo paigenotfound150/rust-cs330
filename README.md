@@ -190,6 +190,73 @@ fn test_pass_by(mut x: i32) {
 - Variables are not accessible after or before code block execution, only during.
 - Variables inside of functions are immutable by default - you have to use the mut keyword during declaration to make them mutable.
 
+## Selection, Loops, Conditionals
+### Booleans
+```
+    let x: bool = true;
+    let y: bool = false;
+```
+### Conditionals 
+```
+
+    if x == true {
+        // add logic here
+    } else if y == false {
+        // add more logic
+    } else {
+        // add more logic
+    }
+
+    if x == true && y == true {
+        // do something
+    }
+```
+
+Rust supports short circuit operations. The below snippet of code will print out "Hello", since the conditional stops executing once it finds the true evaluation.
+```
+    let x: bool = true;
+    let y: bool = false;
+
+    if x == true {
+        println!("Hello");
+    } else if y == false {
+        println!(" World");
+    }
+```
+
+### Switch Statements
+Rust has several ways to write switch statements.
+
+- Single value matching
+```
+    let num = 1
+    match num{
+        1=>println!("One"),
+        2=>println!("Two"),
+        3=>println!("Three"),
+        4=>println!("Four")
+    }
+```
+
+- Multiple value matching
+```
+    match num{
+        1|2->println!("One or two"),
+        3|4=>println!("Three or four"),
+        _=>println!("The rest"),
+    }
+```
+
+- Matching a value that exists in a range (both ends are included)
+```
+    match num{
+        1..=4=>println!("1 through 5");
+        _=>println!("The rest")
+    }
+```
+
+
+
 
 ## Sources
 [1] https://en.wikipedia.org/wiki/Rust_(programming_language)#:~:text=Rust%20is%20a%20multi%2Dparadigm,in%20other%20memory%2Dsafe%20languages.
@@ -205,4 +272,8 @@ fn test_pass_by(mut x: i32) {
 [6] https://doc.rust-lang.org/book/ch03-02-data-types.html
 
 [7] https://doc.rust-lang.org/book/ch03-03-how-functions-work.html
+
+[8] https://www.geeksforgeeks.org/rust-switch-case/#
+
+
 
