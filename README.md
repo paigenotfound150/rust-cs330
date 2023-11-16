@@ -256,6 +256,54 @@ Rust has several ways to write switch statements.
 ```
 
 
+## Classes 
+- Rust uses Structs and Enums instead of Classes for creating custom types.
+- Rust uses UpperCamelCase for its structs.
+- Rust uses snake_case for function and variable names.
+  
+Creating a struct:
+```
+   struct Dog {
+     name: String,
+     age: u32,
+   }
+```
+Creating an instance of a struct:
+```
+   let dog = Dog {
+       name: "Jerry",
+       age: 12,
+  }
+```
+
+- Instead of using methods for classes, Rust uses "impl blocks" for its structs and enums.
+
+```
+   impl Dog {
+     // Init method
+     fn new(name: &str, age: u32) -> Dog {
+        Dog {
+            title: String::from(name),
+            age,
+        }
+    }
+
+    // An instance method
+    fn printName(&self) {
+        println!("'{}', self.name);
+    }
+ }
+```
+The "new" method is a standard method for creating your object.
+
+Rust does not use inheritance like OOP languages, but you can give a struct instances of another struct.
+For example, a Person struct may have a Dog. 
+```
+struct Person {
+  dog: Dog,
+}
+```
+
 
 
 ## Sources
